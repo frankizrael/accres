@@ -1,0 +1,47 @@
+/* Imports */
+@import "fonts";
+@import "variables";
+@import "main";
+@import "buttons";
+@import "titles";
+@import "content";
+@import "navigation";
+@import "form";
+body {
+    margin: 0px;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: $black;    
+    font-family: 'Roboto', sans-serif;
+}
+input, select, textarea {    
+    font-family: 'Roboto', sans-serif;
+}
+h1, h2, h3, h4 {
+    color: $black;
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    font-family: 'Poppins', sans-serif;
+}
+p, button, ul, li, input, textarea {
+    color: $black;
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    font-family: 'Roboto', sans-serif;
+}
+.x-container {
+    max-width: 1400px;
+    margin: auto;
+    @include maxw(mypc) {
+        max-width: 1250px;
+    }
+    @include maxw(laptop) {
+        max-width: calc(100% - 40px);
+    }
+}

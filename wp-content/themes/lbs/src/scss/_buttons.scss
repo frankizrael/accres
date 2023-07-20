@@ -1,0 +1,14 @@
+.btn {
+    width: 100%;
+    background: #0b274e;
+    border: none;
+    font-size: 18px;
+    padding: 10px 20px;
+    border-radius: 8px;
+    color: white;
+    transition: .3s;
+    text-align: center;
+    &:hover {
+        background: $azuloscuro;
+    }
+}

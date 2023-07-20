@@ -1,0 +1,113 @@
+@import "utilities";
+@import "variables";
+main {
+    display: flex;
+    height: 100vh;
+    background: #ececec;
+}
+aside {
+    width: 250px;
+    height: 100%;
+    background: white;
+    box-shadow: 0px 4px 16px #a8a8a8;
+    padding: 10px;
+    box-sizing: border-box;
+    position: relative;
+    z-index: 1;
+    .aside {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100%;
+        img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        &__top {
+            ul {
+                margin-top: 20px;
+                li {
+                    width: 100%;
+                    display: block;
+                    text-align: center;
+                    font-size: 22px;
+                    padding: 10px;
+                    box-sizing: border-box;
+                    &.active {
+                        background: #569afa;
+                        color: white;
+                        border-radius: 5px;
+                    }
+                }
+            }
+        }
+        &__bottom {
+            a {
+                display: block;
+                text-align: center;
+                box-sizing: border-box;
+            }            
+        }
+    }
+}
+.maincontent {
+    width: calc(100% - 250px);
+    height: 100%;
+    overflow-y: scroll;
+    nav {
+        background: white;
+        margin-bottom: 10px;
+        padding: 10px 30px;
+        box-sizing: border-box;
+        .nav {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            &__right {
+                display: flex;
+                align-items: center;
+                p {
+                    margin-right: 20px;
+                    white-space: nowrap;
+                    font-size: 18px;
+                }
+                a {
+                    margin-left: 10px;
+                }
+            }
+        }
+    }   
+    section {
+        padding: 5px 30px;
+        .sectionMain {
+            display: flex;
+            justify-content: space-between;
+            &__documento {
+                width: calc(50% - 10px);
+                flex: none;
+                background: white;
+                border-radius: 4px;
+                box-shadow: 0px 4px 8px #43434359;
+            }
+            &__values {
+                width: calc(50% - 10px);
+                flex: none;
+                h2 {
+                    font-size: 25px;
+                    margin-bottom: 15px;
+                    padding-bottom: 5px;
+                    position: relative;
+                    &:before {
+                        content: '';
+                        position: absolute;
+                        width: 70px;
+                        height: 2px;
+                        background: $dorado;
+                        bottom: 0px;
+                    }
+                }
+            }
+        }
+    } 
+}
